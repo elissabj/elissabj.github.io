@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Elisa Ramos">
+    <meta name="description" content="Portafolio Elisa Ramos">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Elisa Ramos | Software Enginner</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="images/icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="images/elisa.jpeg" alt="Foto de Elisa Ramos">
+        <h1>Hi, I'm Elisa Ramos</h1>
+        <!--<h2>Be happy.</h2>-->
+
+        <!-- Animación con JavaScript -->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo"></h2>
+        <p class="seccion-texto"> Future software engineer; working to become a better version of myself.
+          Lover of programming languages, compilers, distributed systems, hardware, systems programming, bussiness blogs and helping other. 
+          I never want to stop learning, teaching and empowerment women, that's why I founded CuriesCommunity.</p>
+      </div>
+    </section>
+
+   
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Projects</h2>
+      <h3 class="seccion-descripcion"></h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto1.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Signal Compiler</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/elissabj/Compiladores2021B" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto2.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Computer Graphcis</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/elissabj/ComputerGraphics2021" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto3.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Evolutionary Computing</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/elissabj/EvolutionaryComputing" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto4.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Mini Twitter</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/elissabj/Mini-Twitter" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto5.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Snake Game in C</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/elissabj/Snake" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="images/proyecto6.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Complexity</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/elissabj/analisisAlgortimos" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/elissabj" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          See more
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Academic Stuff -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Education</h2>
+      <h3 class="seccion-descripcion">Academic stuff</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="images/escom2.png" alt="Foto de ESCOM">
+              <p class="testimonio-texto">Bachelor of Science in Computer Engineering.
+                Student of academic excellence in 2018.
+                Teacher, coordinator and participant of my university ACM Student Chapter/Algorithmic Club for 1 year.
+                </p>
+              <div class="testimonio-info">
+                <p class="cliente">Dec 2023</p>
+                <p class="cargo">ESCOM-IPN</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="images/beifi.jpg" alt="Foto de BEIFI">
+              <p class="testimonio-texto">Scholarship BEIFI in the research project "Embedded system for monitoring and management of signals obtained from power generation
+                systems using IoT" in 2022, 2021.
+                Scholarship BEIFI in the research project "Methodology for the pre-diagnosis of actinic keratosis" in 2019.</p>
+              <div class="testimonio-info">
+                <p class="cliente">2019, 2021-2022</p>
+                <p class="cargo">PIFI-IPN</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="images/tecnoChicas.jpg" alt="Foto de Tecnolochicas">
+              <p class="testimonio-texto">Tecnolochicas Pro is an extracurricular educational program with a duration of 40 theoretical and practical hours. 
+                Through teaching programming (html, css, github, javascript).</p>
+              <div class="testimonio-info">
+                <p class="cliente">2022</p>
+                <p class="cargo">Tecnolochicas Fundación Televisa</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="images/cecyt.png" alt="Foto de CECYT">
+              <p class="testimonio-texto">Aeronautical Technician, Thesis Project: Simulation in CAD Software for 3D mechanical modeling (SolidWorks) of a glider.</p>
+              <div class="testimonio-info">
+                <p class="cliente">2017</p>
+                <p class="cargo">CECYT 2 - IPN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              Lets connect!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Send me mail to made a new project, any doubt.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:gomezerms@gmail.com">
+                <button type="button">  
+                  Mail
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- footer -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="images/icono.png" alt="Logo del portafolio">
+      <p class="footer-texto text-center">I think the engineering is the platform of the future.<br>Lets create something new.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://github.com/elissabj" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/elissabj/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/elissabjg/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:gomezerms@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Made by Elisa Ramos (2022) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
