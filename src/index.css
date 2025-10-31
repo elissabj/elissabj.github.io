@@ -24,41 +24,37 @@ html { scroll-behavior: smooth; }
 
 
 @media (max-width: 768px) {
- /* ---- Botón hamburguesa robusto ---- */
 .menu-toggle{
-  display:none;                /* se muestra en móvil abajo */
+  display:none;              
   position:relative;
-  width:40px; height:32px;     /* área de click cómoda */
+  width:40px; height:32px;
   border:0; background:transparent; cursor:pointer;
   -webkit-tap-highlight-color: transparent;
-  z-index:101;                 /* por encima del overlay */
+  z-index:101;              
 }
 .menu-toggle:focus-visible{ outline:2px auto var(--accent); outline-offset:3px; }
-
-/* Color del ícono según header */
 .site-header.transparent .menu-toggle{ color:#fff; }
 .site-header.solid .menu-toggle{ color:var(--text-color); }
 
-/* Barras: absolutas y gruesas para que no “parpadeen” */
 .menu-toggle span{
   position:absolute; left:0; right:0;
-  height:3px;                 /* más grueso = mejor legibilidad */
+  height:3px;             
   background: currentColor;
   border-radius:2px;
   transform-origin:50% 50%;
   transition: transform .25s ease, opacity .2s ease, top .25s ease;
 }
-/* posiciones exactas en píxeles (evita medias-píxel) */
+
 .menu-toggle span:nth-child(1){ top:6px; }
 .menu-toggle span:nth-child(2){ top:14px; }
 .menu-toggle span:nth-child(3){ top:22px; }
 
-/* Estado abierto => X perfecta */
+
 .menu-toggle.is-open span:nth-child(1){ top:14px; transform:rotate(45deg); }
 .menu-toggle.is-open span:nth-child(2){ opacity:0; }
 .menu-toggle.is-open span:nth-child(3){ top:14px; transform:rotate(-45deg); }
+}
 
-/* ---- Menú móvil (overlay) ---- */
 @media (max-width:768px){
   .menu-toggle{ display:inline-block; }
 
