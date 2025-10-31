@@ -39,7 +39,6 @@ section {
   padding-bottom: var(--pad-section);
 }
 
-/* Títulos de sección */
 .section-heading {
   font-size: 2rem;
   font-weight: 600;
@@ -56,7 +55,6 @@ section {
   margin-bottom: 2rem;
 }
 
-/* Tarjetas (por ejemplo para experiencia, proyectos) */
 .card {
   background-color: var(--bg-section);
   border-radius: var(--radius-card);
@@ -68,7 +66,6 @@ section {
   margin-bottom: 1rem;
 }
 
-/* Grid flexible para 2 columnas */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr;
@@ -81,7 +78,6 @@ section {
   }
 }
 
-/* Links bonitos */
 a {
   color: var(--accent);
   text-decoration: none;
@@ -91,7 +87,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Íconos de contacto */
 #contact a {
   transition: transform 0.2s ease, color 0.2s ease;
 }
@@ -101,9 +96,6 @@ a:hover {
   transform: translateY(-4px);
 }
 
-/* ========================== */
-/* SECCIÓN "SOBRE MÍ" / HERO */
-/* ========================== */
 #about {
   width: 100%;
   max-width: var(--max-width);
@@ -127,7 +119,6 @@ a:hover {
   opacity: 0.9;
 }
 
-/* Para que en móviles no se corte raro */
 @media (max-width: 600px) {
   #about h1 {
     font-size: 2.2rem;
@@ -161,11 +152,8 @@ a:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
 .site-header {
-  position: fixed;       /* sobre el hero */
+  position: fixed;      
   top: 0; left: 0; width: 100%;
   z-index: 100;
   transition: background-color .25s ease, box-shadow .25s ease, color .25s ease, backdrop-filter .25s ease;
@@ -185,7 +173,6 @@ a:hover {
   font-size: 1rem;
 }
 
-/* Links heredan el color del header para cambiar entre blanco/oscuro */
 .site-header a { 
   color: inherit; 
   text-decoration: none; 
@@ -195,23 +182,19 @@ a:hover {
 }
 .site-header a:hover { color: var(--accent); }
 
-/* Estado transparente (sobre el hero) */
 .site-header.transparent {
   background: transparent;
-  color: #fff;                /* textos blancos sobre la foto */
+  color: #fff;             
 }
 
-/* Estado sólido (al salir del hero o en otras páginas) */
 .site-header.solid {
   background: var(--bg-section);
   color: var(--text-color);
   border-bottom: 1px solid rgba(0,0,0,.06);
   box-shadow: 0 6px 18px rgba(0,0,0,.08);
-  backdrop-filter: saturate(140%) blur(6px); /* bonito efecto glassy opcional */
+  backdrop-filter: saturate(140%) blur(6px); 
 }
 
-
-/* ====== GRID ====== */
 .portfolio-grid {
   display: grid;
   gap: 1.8rem;
@@ -268,7 +251,6 @@ a:hover {
   line-height: 1.5;
 }
 
-/* Botón lavanda */
 .project-button {
   align-self: flex-start;
   background: #cdb4f9;
